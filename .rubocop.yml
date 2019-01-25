@@ -1,4 +1,4 @@
-inherit_from: .robocop_todo.yml
+inherit_from: .rubocop_todo.yml
 
 AllCops:
   Exclude:
