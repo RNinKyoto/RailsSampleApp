@@ -1,4 +1,4 @@
-= require rails - ujs
+//= require rails-ujs
 //= require turbolinks
 //= require tether
 //= require jquery3
