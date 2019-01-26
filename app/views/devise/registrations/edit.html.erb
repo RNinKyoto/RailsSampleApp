@@ -31,6 +31,11 @@
     <%= f.password_field :current_password, class: "form-control col-md-5 col-sm", placeholder: "Current password", autocomplete: "current-password" %>
   </div>
 
+  <div class="form-gruop">
+    <%= f.label :name %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :name, class: "form-control col-md-5 col-sm", placeholder: "Username" %>
+  </div>
+
   <div class="actions pb-5">
     <%= f.submit "Update" %>
   </div>
