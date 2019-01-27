@@ -20,5 +20,7 @@
 
 .idea
 .DS_Store
+
+public/system
 # Ignore encrypted secrets key file.
 config/secrets.yml.key

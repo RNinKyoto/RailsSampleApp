@@ -59,5 +59,6 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'devise'
+gem 'paperclip', '~> 5.0.0'
 gem 'sidekiq'
 gem 'sinatra'

@@ -35,6 +35,14 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :lockable, :timeoutable
+
+  has_attached_file :avatar,
+                    styles: { medium: '300x300>', thumb: '100x100>' },
+                    default_url: '/missing.png'
+
+  validates_attachment_content_type :avatar,
+                                    content_type: %r{\Aimage\/.*\z}
+
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later
   end
