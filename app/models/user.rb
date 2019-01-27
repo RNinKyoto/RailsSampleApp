@@ -49,6 +49,8 @@ class User < ApplicationRecord
   validates_attachment_content_type :avatar,
                                     content_type: %r{\Aimage\/.*\z}
 
+  enum role: { user: 0, admin: 1 }
+
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later
   end
