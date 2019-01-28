@@ -60,6 +60,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'activeadmin'
+gem 'aws-sdk', '~> 2.3'
 gem 'counter_culture'
 gem 'devise'
 gem 'kaminari'
