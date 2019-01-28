@@ -46,6 +46,13 @@ group :development do
   # gem 'pry-byebug'
   # gem 'pry-rails'
   gem 'annotate'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-nginx'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-sidekiq'
+  gem 'capistrano3-puma'
   gem 'overcommit'
   gem 'rubocop'
 end
